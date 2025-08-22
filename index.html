@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tackathon - Innovation Starts Here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --accent-color: #f97316;
+            --dark-bg: #111827;
+            --light-text: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+        }
+
+        .navbar {
+            padding: 1.5rem 5%;
+            background: rgba(17, 24, 39, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+            background: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)),
+                        url('hackathon-bg.jpg') center/cover;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .section {
+            padding: 5rem 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .prizes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .prize-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .prize-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .navbar ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TACKATHON 2023</h1>
+            <p>48 Hours of Innovation, Coding, and Creation</p>
+            <p>September 15-17, 2023</p>
+            <button class="cta-button">Register Now</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Tackathon</h2>
+        <p>Join us for an exciting 48-hour hackathon where innovators, developers, and creators come together to build amazing solutions. Whether you're a seasoned developer or just starting out, Tackathon is the perfect platform to showcase your skills.</p>
+    </section>
+
+    <section id="timeline" class="section">
+        <h2>Event Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Day 1</h3>
+                <p>Opening Ceremony</p>
+                <p>Team Formation</p>
+                <p>Coding Begins</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Day 2</h3>
+                <p>Continued Coding</p>
+                <p>Mentorship Sessions</p>
+                <p>Progress Check</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Day 3</h3>
+                <p>Final Submissions</p>
+                <p>Project Presentations</p>
+                <p>Awards Ceremony</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prizes" class="section">
+        <h2>Prizes</h2>
+        <div class="prizes">
+            <div class="prize-card">
+                <h3>1st Prize</h3>
+                <p>$5,000</p>
+                <p>+ Mentorship Opportunity</p>
+            </div>
+            <div class="prize-card">
+                <h3>2nd Prize</h3>
+                <p>$3,000</p>
+                <p>+ Tech Gadgets</p>
+            </div>
+            <div class="prize-card">
+                <h3>3rd Prize</h3>
+                <p>$1,500</p>
+                <p>+ Software Licenses</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
